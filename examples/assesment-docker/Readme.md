@@ -1,9 +1,4 @@
-Certainly! Here's a README.md template you can use for your GitHub repository:
-
-```markdown
-# Assessment Docker Project
-
-This project demonstrates the deployment of a multi-container application using Docker Compose. The application consists of a frontend and a backend.
+# This project demonstrates the deployment of a multi-container application using Docker Compose. The application consists of a frontend and a backend.
 
 ## Project Structure
 
