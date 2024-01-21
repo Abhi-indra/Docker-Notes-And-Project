@@ -10,19 +10,19 @@
 
 ### For this task am created two containers one is for frontend and another is for backend and the structure of project that i follow are 👍
 
-project-root/
-├── backend/
-│   ├── Dockerfile
-│   ├── package.json
-│   ├── server.js
-│   
-├── frontend/
-│   ├── Dockerfile
-│   ├── package.json
-│   ├── src/
-│   
-├── docker-compose.yml
-└── README.md
+  project-root/
+  ├── backend/
+  │   ├── Dockerfile
+  │   ├── package.json
+  │   ├── server.js
+  │   
+  ├── frontend/
+  │   ├── Dockerfile
+  │   ├── package.json
+  │   ├── src/
+  │   
+  ├── docker-compose.yml
+  └── README.md
 
 
 ## Frontend-
@@ -31,29 +31,29 @@ Write a a Dcokerfile for frontend inside the frontend folder
 
 Here are the steps: 
 
-- Use an official Node.js runtime as a base image
-  FROM node:14-alpine
-
-- Set the working directory inside the container
-  WORKDIR /app
-
-- Copy package.json and package-lock.json to the working directory
-  COPY package*.json ./
-
-- Install project dependencies
-  RUN npm install
-
-- Copy the rest of the application code to the working directory
-  COPY . .
-
-- Build the React app for production
-  RUN npm run build
-
-- Expose the port the app runs on
-  EXPOSE 3000
-
-# Define the command to run your app using npm start
-  CMD ["npm", "start"]
+  # Use an official Node.js runtime as a base image
+    FROM node:14-alpine
+  
+  # Set the working directory inside the container
+    WORKDIR /app
+  
+  # Copy package.json and package-lock.json to the working directory
+    COPY package*.json ./
+  
+  # Install project dependencies
+    RUN npm install
+  
+  # Copy the rest of the application code to the working directory
+    COPY . .
+  
+  # Build the React app for production
+    RUN npm run build
+  
+  # Expose the port the app runs on
+    EXPOSE 3000
+  
+  # Define the command to run your app using npm start
+    CMD ["npm", "start"]
 
 - After that i run a command to build the image of fronend
   docker build -t frontend .
