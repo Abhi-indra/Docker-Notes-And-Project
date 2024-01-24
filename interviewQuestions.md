@@ -25,7 +25,7 @@ what dependencies should be installed for the application to run? etc..
 ##### Answer 5 - 
 - Docker ADD can copy the files from a URL unlike Docker COPY which can only copy files from host system into the container.
 
-##### Ques##### tion 6 - What is the difference between CMD and ENTRYPOINT in Dockerfile?
+##### Question 6 - What is the difference between CMD and ENTRYPOINT in Dockerfile?
 ##### Answer 6 - 
 - CLI arguments using the Docker run command will override the arguments specified using the CMD instruction.
 
